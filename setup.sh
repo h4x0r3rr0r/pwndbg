@@ -204,7 +204,7 @@ if [[ -z "${PWNDBG_VENV_PATH}" ]]; then
 fi
 echo "Creating virtualenv in path: ${PWNDBG_VENV_PATH}"
 
-${PYTHON} -m venv -- ${PWNDBG_VENV_PATH}
+python3 -m venv -- ${PWNDBG_VENV_PATH}
 source ${PWNDBG_VENV_PATH}/bin/activate
 poetry install
 
